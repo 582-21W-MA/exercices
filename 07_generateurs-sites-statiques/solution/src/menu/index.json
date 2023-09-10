@@ -1,0 +1,6 @@
+{
+	"dishes": [
+		{ "nom": "Sushi", "prix": 13 },
+		{ "nom": "Sashimi", "prix": 20 }
+	]
+}

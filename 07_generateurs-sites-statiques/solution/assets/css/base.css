@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "Starla";
+	src: url("/assets/fonts/starla.ttf");
+}
+
+:root {
+	--color-primary: #807553;
+	--color-neutral: white;
+}
+
+body {
+	background-color: var(--color-primary);
+	color: var(--color-neutral);
+	font-family: "Starla";
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
