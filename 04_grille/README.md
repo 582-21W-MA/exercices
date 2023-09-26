@@ -9,3 +9,4 @@ Cet exercice a pour but de vous familiariser avec le processus de conception d'u
 ### Ressources
 
 - [Comment créer une grille à l'aide de Figma (anglais)](https://help.figma.com/hc/en-us/articles/360040450513-Create-layout-grids-with-grids-columns-and-rows)
+- [Layout Grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
