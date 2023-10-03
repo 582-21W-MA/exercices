@@ -5,6 +5,7 @@ Cet exercice a pour but de vous familiariser avec le processus de conception d'u
 1. Commencez par prendre une capture d'écran des sites Web que vous avez choisis lors de l'exercice « recherche ». 
 2. Créez ensuite un fichier **design** dans Figma, et ajoutez votre capture d'écran à l'intérieur d'un *frame*.
 3. À l'aide de l'outil *layout grid*, concevez une grille sur laquelle s'alignent les divers éléments de la page. Il se peut que plusieurs grilles se superposent.
+4. À l'aide de l'inspecteur de votre navigateur, examinez le code source du site Web, et tentez d'identifier si celui-ci utilise une mesure de base pour l'espacement des éléments. Si oui, quelle est-elle ?
 
 ### Ressources
 
