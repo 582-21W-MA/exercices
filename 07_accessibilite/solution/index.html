@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- L'attribut `lang` permet de définit la langue utilisée pour
+un élément. Si un site contient du contenu rédigé en plusieurs
+langues, alors il faut préciser la langue pour chacun des éléments.
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- La balise méta `viewport` permet d'adapter la taille du
+		site Web à celle de l'appareil sur lequel il est affiché.
+		-->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Accessibility assessment</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<!-- Le `div` orginal avait une classe `header`. Lorsque votre
+		classe a le même nom qu'un élément, c'est généralement
+		un bon indice que votre HTML n'est pas sémantique, ou que la
+		classe est superflue. -->
+		<header>Welcome to our wildlife website</header>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Our team</a>
+			<a href="#">Projects</a>
+			<a href="#">Blog</a>
+			<form>
+				<!-- On peut omettre l'attribut `for` d'une légende
+				à condition que celle-ci contienne le champs qu'elle
+				légende. -->
+				<label>
+					<!-- L'utilisation d'un `span` est justifié
+					ici puisque nous utilisons celui-ci uniquement
+					pour cacher la légende. Il n'a pas de valeur
+					sémantique. -->
+					<span>Search</span>
+					<!-- Les « placeholders » peuvent porter à
+					confusion pour certain·es utilisateur·rices.
+					Mieux vaut les éviter lorsque possible. Dans tous
+					les cas, ils ne devraient jamais remplacer une
+					légende. -->
+					<input type="search" name="search" />
+				</label>
+				<!-- Vous verrez aussi parfois `<input
+				type="button">`. Quoique l'utilisation de ce dernier
+				n'est pas techniquement une erreur, `button` est
+				sémantiquement plus pertinent. Un champs *prend* une
+				valeur ; un bouton *soumet* une valeur. -->
+				<!-- Le bouton original a comme texte « Go! », ce
+				qui ne décrit pas très bien sa fonctionnalité.
+				Le texte d'un bouton devrait décrire l'action qui
+				lui est associée, habituellement sous la forme d'un
+				verbe. -->
+				<button>Search</button>
+			</form>
+		</nav>
+
+		<main>
+			<article>
+				<header>
+					<!-- Une page Web doit avoir un seul `h1`. -->
+					<h1>The trouble with Bears</h1>
+					<p>By Evan Wild</p>
+				</header>
+				<!-- La page originale utilise des `br` pour
+				l'espacement, une pratique à proscrir. Un `br`
+				représente un saut de ligne sémantique, ce qui est
+				très rare, sauf dans la poésie. -->
+				<p>
+                    Tall, lumbering, angry, dangerous. The real
+                    live bears of this world are proud, independent
+                    creatures, self-serving and always on the hunt for
+                    food. Nothing like the bears you see on TV, like
+                    Baloo from renowned documentary, The Jungle Book.
+                </p>
+                <p>
+                    So what are bears really like, and why does the
+                    world's media portray them with such a skewed
+                    vision? In this article we try to answer those
+                    questions, and give you a real insight into the
+                    life of the bear.
+				</p>
+				<h2>Types of bear</h2>
+				<p>
+					Bears come in two varieties — large and medium.
+					You don't get small bears. If you have seen a
+					small bear, then it was in fact probably a baby
+					bear (cub) from another species.
+				</p>
+				<p>
+					Bears can also be classified in terms of their
+					habitat — both large and medium bears are just as
+					at home in urban areas as they are in the
+					countryside. Different habitats encourange
+					different behaviour however, as you'll find out
+					below. The below table also gives you some useful
+					facts about bears.
+				</p>
+				<!-- Gardez à l'esprit que les tableaux peuvent être
+				difficiles à adapter aux appareils de petite taille,
+				surtout s'ils ont plusieurs colonnes. Si possible,
+				choisissez un autre format pour présenter
+				de l'information. -->
+				<table>
+					<!-- L'élément `caption` permet de résumer le
+					contenu du tableau. -->
+					<caption>
+						Various informations on wild versus urban
+						types of bears.
+					</caption>
+					<thead>
+						<tr>
+							<!-- L'élément `<th>` définit une
+							cellule d'en-tête. L'attribut `scope`
+							indique les cellules auxquelles l'en-tête
+							est reliée. -->
+							<th scope="col">Bear Type</th>
+							<th scope="col">Coat</th>
+							<th scope="col">Adult size</th>
+							<th scope="col">Habitat</th>
+							<th scope="col">Lifespan</th>
+							<th scope="col">Diet</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Wild</th>
+							<td>Brown or black</td>
+							<td>1.4 to 2.8 meters</td>
+							<td>Woods and forests</td>
+							<td>25 to 28 years</td>
+							<td>Fish, meat, plants</td>
+						</tr>
+						<tr>
+							<th scope="row">Urban</th>
+							<td>North Face</td>
+							<td>18 to 22</td>
+							<td>Condos and coffee shops</td>
+							<td>20 to 32 years</td>
+							<td>Starbucks, sushi</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2>Habitats and Eating habits</h2>
+				<p>
+					Wild bears eat a variety of meat, fish, fruit,
+					nuts, and other natually growing ingredients.
+					In general they will hunt for food themselves
+					in woodland or rivers, but at a push they will
+					track down their sustenance from farms or country
+					houses. They tend to live in relative isolation,
+					in caves, tents, or cottages.
+				</p>
+				<!-- Un bon texte alternatif décrit en détail ce que
+				contient l'image pour ceux et celles qui ne peuvent
+				pas la voir.-->
+				<img
+					src="media/wild-bear.jpg"
+					alt="Bear in a river looking away"
+				/>
+				<p>
+					Urban (gentrified) bears on the other hand have
+					largely abandoned the old ways. They will hunt
+					other urban creatures if necessary (including
+					other predators like rats and foxes), but prefer
+					to scavenge from readily available urban food
+					outlets like dumpsters, bins, and fast food
+					joints. When food has proven scarce, urban bears
+					have even been known to break into people's
+					kitchens and steal essentials like baked beans,
+					ready meals, and microwave ovens.
+				</p>
+				<img
+					src="media/urban-bear.jpg"
+					alt="Polaroid of a polar bear in a cage"
+				/>
+				<p>
+					Urban bears will sleep anywhere they can, from bus
+					shelters and parks, to the toilets in McDonalds,
+					to their own apartment.
+				</p>
+				<h2>Mating rituals</h2>
+				<p>
+					Bears are romantic creatures by nature, and will
+					naturally look for a mate that they can spend
+					the rest of their lives with. They will woo a
+					potential suitor by making their dwelling look
+					attractive — for example with cave paintings or
+					a bed of reeds in the case of a wild bear, and
+					mood lighting and a Michael Bublé CD in the case
+					of an urban bear.
+				</p>
+				<p>
+					The following audio clip contains a fact file
+					providing more details about bear mating rituals,
+					along with samples and quotes from experts.
+				</p>
+				<figure>
+					<audio controls>
+						<source src="media/bear.mp3" type="audio/mp3" />
+						<source src="media/bear.ogg" type="audio/ogg" />
+					</audio>
+					<figcaption>
+						This isn't really an audio file about bears, but it is an audio file that you can transcribe.
+					</figcaption>
+				</figure>
+
+				<footer>
+					<h2>About the author</h2>
+					<p>
+						Evan Wild is an unemployed plumber from
+						Doncaster, who has been really "in to"
+						wildlife since childhood. He once went to
+						Chester Zoo on holiday, but got ill after
+						eating a doner kebab.
+					</p>
+					<p>
+						He has never seen a bear, but once read a
+						Daily Mail article about them, and thinks they
+						sound cool.
+					</p>
+				</footer>
+				<!-- L'élément `details` permet de cacher ce qu'il
+				contient sans avoir recours à Javascript. L'élément
+				est donc plus robuste et accessible. -->
+				<details open>
+					<summary>Comments</summary>
+						<form>
+							<fieldset>
+								<!-- Lorsque possible, il est
+								préférable d'utiliser une `legend`
+								plutôt qu'un titre à l'intérieur
+								d'un formulaire. -->
+								<legend>Add comment</legend>
+								<label>
+									Name
+									<input
+										type="text"
+										name="name"
+									/>
+								</label>
+								<label>
+									Comment
+									<textarea
+										name="comment"
+									></textarea>
+								</label>
+								<button>Submit</button>
+							</fieldset>
+						</form>
+						<ul>
+							<li>
+								<p>Bob Fossil</p>
+								<p>
+									Oh I am so glad you taught me
+									all about the big brown angry
+									guys in the woods. With their
+									sniffing little noses and their
+									bad attitudes, they can sure be
+									a menace — I was thinking of
+									putting them all in a truck and
+									driving them outta here. I run a
+									zoo, you know.
+								</p>
+							</li>
+						</ul>
+				</details>
+			</article>
+			<aside>
+				<h2>Related</h2>
+				<ul>
+					<li><a href="#">The trouble with Bees</a></li>
+					<li><a href="#">The trouble with Otters</a></li>
+					<li><a href="#">The trouble with Penguins</a></li>
+					<li><a href="#">The trouble with Octopi</a></li>
+					<li><a href="#">The trouble with Lemurs</a></li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<small>©Copyright 2050 by nobody. All rights reversed.</small>
+		</footer>
+	</body>
+</html>

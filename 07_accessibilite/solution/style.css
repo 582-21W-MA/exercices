@@ -1,0 +1,156 @@
+/* NOTES ************************************************************/
+
+/* La présente feuille de style est divisée en sections.
+Habituellement, il serait conseillé de placer ces sections dans des
+feuilles de styles différentes, et de l'importer. */
+
+/* FONTS ************************************************************/
+
+/* La version originale importe les fontes directement des serveurs de
+Google Fonts. Il est préférable de servir vous-même les ressources
+de votre site Web, au cas où Google change l'API, ou les fontes
+deviennent indisponibles. */
+
+@font-face {
+	font-family: "Open Sans Condensed";
+	src: url("/assets/fonts/OpenSans_Condensed-Regular.ttf");
+	font-style: normal;
+	/* La version originale utilise une graisse plus légerte (300),
+	ce qui peut nuire à la lisibilité, surtout si le corps est
+	petit. */
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Sonsie One";
+	src: url("/assets/fonts/SonsieOne-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* RESET ************************************************************/
+
+/* Une feuille de style « reset » sert généralement à annuler le
+style par défaut des navigateurs. */
+
+html,
+body,
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+/* GENERAL **********************************************************/
+
+/* Le corps du site orginal est de 10px, ce qui est trop petit pour
+être lisible. */
+/* Nous définissons le corps à la racine afin de pouvoir utiliser
+l'unité de mesure REM. */
+:root {
+	font-size: 20px;
+}
+
+/* Le site original définit une largeur minimale pour le `body`,
+ce qui veut dire que le site ne peut pas s'adapter aux différentes
+tailles d'appareil. */
+body {
+	margin: 1rem auto;
+	padding: 0 2rem;
+	max-width: 1200px;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+/* HEADER ***********************************************************/
+
+body > header {
+	font-family: "Sonsie One", cursive;
+	font-size: 3rem;
+	/* Le contraste entre la couleur original et le fond de la page ne
+	respecte pas les WCAG. */
+	color: black;
+}
+
+/* NAVIGATION *******************************************************/
+
+/* Le style original pour la barre de navigation définit une hauteur
+fixe en pixel. Évitez de définir des tailles fixes. Le Web est
+fluide ; laissez les éléments s'ajuster naturellement au contexte dans
+lequel ils s'affichent. Utilisez plutôt le `padding`. */
+nav {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+
+	padding: 2rem 4rem;
+	margin-top: 1rem;
+
+	/* Le contraste entre la couleur original et le fond de la page ne
+	respecte pas les WCAG. */
+	background-color: darkseagreen;
+}
+
+/* La légende est cachée et retirée du flux du document plutôt que
+non-affichée afin qu'elle soit prise en compte par les lecteurs
+d'écran. */
+nav label span {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+/* MAIN *************************************************************/
+
+main {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+/* ARTICLE **********************************************************/
+
+article {
+	background: darkseagreen;
+	flex-grow: 2;
+	flex-basis: 500px;
+	padding: 1rem;
+}
+
+h1 {
+	font-family: "Sonsie One", cursive;
+	font-size: 2rem;
+}
+
+h2 {
+	margin-top: 2rem;
+}
+
+img,
+audio {
+	margin: 1rem;
+}
+
+table {
+	width: 100%;
+}
+
+/* COMMENTS *********************************************************/
+
+details form {
+	margin: 1rem 0;
+}
+
+/* ASIDE ************************************************************/
+
+aside {
+	flex-grow: 1;
+}
