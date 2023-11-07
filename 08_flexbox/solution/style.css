@@ -1,0 +1,72 @@
+/* Présentation *****************************************************/
+
+body {
+	font-family: system-ui, sans-serif;
+	margin: 4rem;
+}
+
+figcaption {
+	font-family: ui-monospace;
+	text-align: center;
+}
+
+figcaption:before {
+	content: "← ";
+}
+
+figcaption:after {
+	content: " →";
+}
+
+form,
+button,
+input {
+	border-radius: 5px;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+/* Solution *********************************************************/
+
+form {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	align-items: flex-end;
+
+	background-color: gainsboro;
+
+	resize: horizontal;
+	overflow: hidden;
+
+	padding: 1rem;
+	max-width: 600px;
+	min-width: 250px;
+	margin: 1rem auto;
+}
+
+label {
+	flex-grow: 2;
+	flex-basis: 200px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+/* flex-grow et flex-basis sont les deux propriétés importantes ici.
+flex-grow: 2 indique que les les labels doivent se distribuer chacun 2
+parts de l'espace supplémentaire. */
+
+button,
+input {
+	padding: 0.5rem 1rem;
+	border: none;
+}
+
+button {
+	flex-grow: 1;
+	background-color: black;
+	color: white;
+	margin-top: 1rem;
+}
