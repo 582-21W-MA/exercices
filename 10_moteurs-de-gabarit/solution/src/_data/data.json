@@ -1,0 +1,9 @@
+{
+	"title": "Ohayō by Yasujirō Ozu",
+	"nav": ["home", "about", "contact"],
+	"cast": [
+		{ "char": "Heiichiro Fukui", "actor": "Keiji Sada" },
+		{ "char": "Setsuko Arita", "actor": "Yoshiko Kuga " },
+		{ "char": "Keitaro Hayashi", "actor": "Chishū Ryū" }
+	]
+}

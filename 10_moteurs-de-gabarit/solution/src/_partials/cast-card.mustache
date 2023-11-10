@@ -1,0 +1,17 @@
+{{! Attention aux éléments que vous incluez et excluez d'un
+partiel/composant. Un composant devrait être autonome et
+indépendant, c'est-à-dire qu'il ne doit pas dépendre de code
+externe à lui-même. }}
+
+{{! Ci-bas, le `<li>` ne fait pas parti du composant, car un <li> ne
+peut pas être seul ; il doit toujours être dans un `<ul>`. Si le
+`<li>` faisait parti du composant, alors celui-ci devrait toujours
+être importé à l'intérieur d'un `<ul>`, et donc il ne serait pas
+indépendant. }}
+
+<dl>
+	<dt>Character</dt>
+	<dd>{{char}}</dd>
+	<dt>Actor/actress</dt>
+	<dd>{{actor}}</dd>
+</dl>

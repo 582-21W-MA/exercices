@@ -1,0 +1,11 @@
+ul {
+	display: grid;
+	list-style: none;
+	grid-template-columns: repeat(auto-fit, 300px);
+	gap: 1rem;
+}
+
+li {
+	border: 1px solid;
+	padding: 1rem;
+}

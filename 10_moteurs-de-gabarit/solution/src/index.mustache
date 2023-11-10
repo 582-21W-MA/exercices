@@ -1,0 +1,17 @@
+{{> _partials/head}}
+{{> _partials/header}}
+
+<main>
+	<ul>
+		{{! La valeur de `cast` est un tableau qui contient des
+		objects. Lorsqu'on itère sur chacun des objets, nous avons
+		accès aux propriétés (clé + valeur) de celui-ci. }}
+		{{#cast}}
+		<li>
+			{{> _partials/cast-card}}
+		</li>
+		{{/cast}}
+	</ul>
+</main>
+
+{{> _partials/footer}}
