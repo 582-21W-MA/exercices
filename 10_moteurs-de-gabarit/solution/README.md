@@ -9,10 +9,9 @@ celui-ci est écrasé à chaque fois que le code source est mis à jour.
 D'ailleurs, à l'avenir, nous n'enregistrons pas le contenu de `site`
 avec Git.
 
-Les répertoires `_data` et `_partials` sont préfixés d'un tiret bas
-pour indiquer qu'ils contiennent des fichiers nécessaires pour
-générer le site Web, mais qui ne se retrouveront pas dans le
-répertoire `site`.
+Le répertoire`_partials` est préfixé d'un tiret bas pour indiquer
+qu'il contient des fichiers nécessaires pour générer le site Web,
+mais qui ne se retrouveront pas dans le répertoire `site`.
 
 Le répertoire `assets` contient les ressources de notre site Web :
 les feuilles de style, les fontes, les images, etc. Techniquement,
@@ -26,6 +25,6 @@ La commande utilisée pour générer le site à partir de la racine du
 répertoire `solution` est la suivante :
 
 ```sh
-mustache "src/_data/data.json" "src/index.mustache" > "site/index.html" &&
+mustache "src/data.json" "src/index.mustache" > "site/index.html" &&
 cp -r "src/assets" "site"
 ```
