@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Les accents : fonctions et histoire | BDL</title>
+    </head>
+    <body>
+        <header>
+            <!-- Pourrait être dans une <nav>. -->
+            <a href="..."><img
+                    src="..."
+                    alt="Logo du Gouvernement du Québec"
+                ></a>
+            <a href="...">Office québécois de la langue française</a>
+            <a href="...">Nous joindre</a>
+        </header>
+        <form method="get" action="...">
+            <!-- Libellé manquant dans l'original. -->
+            <label for="searchbar">Recherche</label>
+            <input
+                id="searchbar"
+                type="search"
+                name="search"
+                placeholder="Chercher des mots, des termes spécialisés, des sujets linguistiques..."
+            >
+            <button type="button" popovertarget="history">Historique</button>
+            <dialog id="history" popover>
+                <ol>
+                    <li>...</li>
+                </ol>
+            </dialog>
+            <button type="submit">Lancer la recherche</button>
+            <fieldset>
+                <input id="bdl-checkbox" type="checkbox" name="bdl">
+                <img
+                    src="..."
+                    alt="Logo de la Banque de dépannage linguistique"
+                >
+                <label for="bdl-checkbox">
+                    Banque de dépannage linguistique
+                </label>
+                <!-- Les tirets seront affichés avec CSS puisqu'ils sont
+                des éléments stylistiques. -->
+                <ul>
+                    <li>Grammaire</li>
+                    <li>Ortographe</li>
+                    <li>Syntaxe</li>
+                    <li>Rédaction</li>
+                </ul>
+                <input id="gdt-checkbox" type="checkbox" name="gdt">
+                <img src="..." alt="Logo du Grand dictionnaire terminologique">
+                <label for="gdt-checkbox">
+                    Grand dictionnaire terminologique
+                </label>
+                <ul>
+                    <li>Termes spécialisés</li>
+                    <li>Définitions</li>
+                    <li>Traductions</li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <nav>
+            <!-- Les chevrons seront affichés avec CSS puisqu'ils sont
+            des éléments stylistiques. -->
+            <ol>
+                <li>Accueil</li>
+                <li>Index thématique</li>
+                <li>
+                    <button popovertarget="hidden-breadcrumbs">
+                        Afficher les niveaux intermédiaires
+                    </button>
+                    <dialog id="hidden-breadcrumbs" popover>
+                        <ol>
+                            <li>L'orthographe</li>
+                            <li>Accents, tréma et cédille</li>
+                        </ol>
+                    </dialog>
+                </li>
+                <li>Accent aigu et accent grave</li>
+                <li>Fonctions et histoire</li>
+            </ol>
+        </nav>
+        <main>
+            <aside>
+                <img
+                    src="..."
+                    alt="Logo de la Banque de dépannage linguistique"
+                >
+                <h2>Partager</h2>
+                <ul>
+                    <li>
+                        <a href="..."><img src="..." alt="Icône courriel"></a>
+                    </li>
+                    <li>
+                        <a href="..."><img src="..." alt="Icône lien"></a>
+                    </li>
+                    <li>
+                        <a href="..."><img src="..." alt="Icône Facebook"></a>
+                    </li>
+                    <li>...</li>
+                </ul>
+            </aside>
+            <section>
+                <h1>Les accents : fonctions et histoire</h1>
+                <p>
+                    <!-- Le contenu entre <i> devrait plutôt être entre
+                    guillemets. On utilise l'élément de texte idiomatic
+                    comme alternative. -->
+                    Les accents peuvent avoir deux fonctions en français : une
+                    fonction phonétique, c'est-à-dire qu'ils peuvent préciser la
+                    prononciation d'une voyelle (le <i>e</i> n'est pas prononcé
+                    de la même façon dans <i>le</i>, <i>état</i>, <i>après</i>);
+                    et une fonction distinctive, c'est-à-dire qu'ils peuvent
+                    distinguer des
+                    <button popovertarget="definition">
+                        <dfn
+                            title="Mot dont la prononciation est identique à celle d'un ou plusieurs autres mots, mais dont le sens est différent."
+                        >
+                            homophones
+                        </dfn>
+                    </button>
+                    (<i>ou</i> et <i>où</i>, par exemple).
+                </p>
+                <dialog id="definition" popover>
+                    <p>
+                        Mot dont la prononciation est identique à celle d'un ou
+                        plusieurs autres mots, mais dont le sens est différent.
+                    </p>
+                    <button popovertarget="definition">
+                        <img src="..." alt="Icône pour ×">
+                    </button>
+                </dialog>
+
+                <h2>Pourquoi des accents aigu et grave en français?</h2>
+                <p>
+                    Les accents sont apparus assez récemment dans l'orthographe
+                    française. Au fil de l'évolution de la langue, on a réalisé
+                    que le nombre de caractères de l'alphabet latin était
+                    insuffisant pour noter tous les sons du français,
+                    particulièrement les sons vocaliques (les voyelles
+                    phonétiques), plus nombreux en français qu'en latin.
+                </p>
+                <h2>Historique</h2>
+                <p>
+                    Pour régler le problème du nombre de caractères, on a
+                    d'abord eu recours à des lettres diacritiques, des lettres
+                    qu'on ajoutait aux mots afin de donner une indication sur la
+                    prononciation des voyelles.
+                </p>
+                <p>
+                    C'est au XVIe siècle qu'on a commencé à ajouter des signes
+                    auxiliaires aux caractères alphabétiques, dont les accents,
+                    pour préciser les sons à prononcer. Il s'agissait d'un
+                    changement important puisqu'on n'employait pas ces signes en
+                    latin. Les accents se sont mis à jouer le même rôle que
+                    jouaient les lettres diacritiques, c'est-à-dire préciser la
+                    prononciation des voyelles. Certaines lettres diacritiques
+                    ont d'ailleurs disparu au profit des accents; c'est le cas
+                    du s muet, qui a été remplacé, selon le cas, par é (eschole
+                    est devenu école), è (deuxiesme est devenu deuxième) ou ê
+                    (estre est devenu être).
+                </p>
+                <p>
+                    Au XVIe siècle, les accents étaient utilisés assez
+                    régulièrement; cependant, leur emploi a régressé dans la
+                    première moitié du XVIIe siècle. Ce n'est finalement qu'à la
+                    fin du XVIIIe siècle, deux siècles après l'apparition des
+                    premiers accents, qu'on s'est mis à les utiliser comme on le
+                    fait aujourd'hui.
+                </p>
+            </section>
+            <section>
+                <h2>À lire aussi</h2>
+                <ul>
+                    <li>
+                        <a href="...">Apprenez-en plus sur l'accent aigu.</a>
+                    </li>
+                    <li>
+                        <a href="...">
+                            Qu'est-ce que la fonction phonétique de l'accent
+                            grave?
+                        </a>
+                    </li>
+                    <li>...</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Évaluation de la page ou suggestion</h2>
+                <form method="post" action="...">
+                    <fieldset>
+                        <!-- L'astérisque sera affiché avec CSS
+                        puisqu'il est un élément stylistique. -->
+                        <legend>
+                            L'information sur cette page vous a-t-elle été
+                            utile?
+                        </legend>
+                    </fieldset>
+                    <label>
+                        Oui
+                        <input
+                            type="radio"
+                            name="is-useful"
+                            value="true"
+                            required
+                        >
+                    </label>
+                    <label>
+                        Oui
+                        <input
+                            type="radio"
+                            name="is-useful"
+                            value="false"
+                            required
+                        >
+                    </label>
+                    <label>
+                        Avez-vous un commentaire à nous transmettre ou un
+                        problème à signaler?
+                        <small>
+                            Veuillez n'inscrire aucun renseignement personnel.
+                            <strong>
+                                Prenez note que vous ne recevrez aucune réponse.
+                            </strong>
+                        </small>
+                        <textarea name="comment"></textarea>
+                    </label>
+                    <p>
+                        Pour obtenir une réponse à une question de nature
+                        linguistique, utilisez le formulaire
+                        <a href="...">Nous joindre</a>.
+                    </p>
+                    <button type="submit">Soumettre</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <h2>À propos de la Vitrine linguistique</h2>
+                <ul>
+                    <li>
+                        <a href="..."
+                        >Capsule vidéo sur la Vitrine linguistique</a>
+                    </li>
+                    <li>
+                        <a href="...">Les mots de la Vitrine linguistique</a>
+                    </li>
+                    <li><a href="...">Offre de services linguistiques</a></li>
+                    <li><a href="...">Politiques et guides</a></li>
+                    <li><a href="...">Foire aux questions</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>À propos de la Vitrine linguistique</h2>
+                <ul>
+                    <li>
+                        <a href="..."
+                        >Capsule vidéo sur la Vitrine linguistique</a>
+                    </li>
+                    <li>
+                        <a href="...">Les mots de la Vitrine linguistique</a>
+                    </li>
+                    <li><a href="...">Offre de services linguistiques</a></li>
+                    <li><a href="...">Politiques et guides</a></li>
+                    <li><a href="...">Foire aux questions</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Actualités</h2>
+                <ul>
+                    <li>Articles et fiches vedette</li>
+                    <li>Brèves</li>
+                    <li>...</li>
+                </ul>
+            </section>
+            <section><h2>...</h2></section>
+            <form method="post" action="...">
+                <h2>Abonnez-vous!</h2>
+                <p>
+                    Nos infolettres vous permettent d’avoir accès à plusieurs
+                    ressources.
+                </p>
+                <label>
+                    Prénom
+                    <input type="text" name="first-name" required>
+                </label>
+                <label>
+                    Nom
+                    <input type="text" name="last-name" required>
+                </label>
+                <label>
+                    Courriel
+                    <input type="email" name="email" required>
+                </label>
+                <button type="submit">Je veux m'abonner</button>
+            </form>
+        </footer>
+    </body>
+</html>
