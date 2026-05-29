@@ -1,0 +1,73 @@
+.search-target__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.search-target__icon {
+    margin-right: 0.5rem;
+    width: 79px;
+    min-width: 3rem;
+    max-width: 4.0625rem;
+    height: 28px;
+    min-height: 1.75rem;
+}
+
+.search-target {
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+    color: #223654;
+    line-height: 1.4;
+    letter-spacing: -0.009375rem;
+
+    &::before {
+        flex-shrink: 0;
+        box-sizing: border-box;
+        margin: 0.1875em 0.5rem 0 0;
+        border: 1px solid #808a9d;
+        background-color: white;
+        width: 1rem;
+        height: 1rem;
+        content: "";
+    }
+
+    &:has(.search-target__checkbox:checked)::before {
+        background-image: url("https://vitrinelinguistique.oqlf.gouv.qc.ca/_assets/41b1d38ea1e2f5595975318cf5f2ca46/images/svg/icons/ico_coche.svg");
+        background-position: center;
+        background-size: 12px 10px;
+        background-repeat: no-repeat;
+        background-color: #1479cc;
+    }
+}
+
+.search-target__label {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.search-target__checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.search-target__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-target__tags {
+    display: flex;
+    margin-top: 0.25rem;
+}
+
+.search-target__tag {
+    font-size: 0.75rem;
+}
+
+.search-target__tag + .search-target__tag::before {
+    padding: 0 0.25em;
+    content: "–";
+}

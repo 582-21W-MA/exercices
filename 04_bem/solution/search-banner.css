@@ -1,0 +1,130 @@
+.search-banner {
+    border-bottom: 12px solid #35b6ff;
+    background-color: #f2f1f1;
+    padding: 1rem 0;
+}
+
+.search-banner__form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+    max-width: 59.375rem;
+}
+
+.search-banner__submit-btn {
+    border: none;
+    background-color: #095797;
+    width: 4rem;
+    color: white;
+}
+
+.search-banner__submit-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.search-banner__fieldset {
+    display: flex;
+    gap: 4.25rem;
+    margin-top: 0.75rem;
+}
+
+.search-banner__bar-container {
+    display: flex;
+    anchor-name: --search-bar;
+}
+
+.search-banner__bar-label {
+    position: absolute;
+    visibility: hidden;
+}
+
+.search-banner__bar-input {
+    flex: 1;
+    border: 1px solid #808a9d;
+    padding: 0 10.5rem 0 1.25rem;
+    height: 3.75rem;
+
+    &:focus {
+        outline: solid 3px #89bce5;
+    }
+}
+
+.search-banner__bar-container:has(.search-banner__history-dialog:popover-open)
+    .search-banner__bar-input {
+    border-bottom-color: white;
+}
+
+.search-banner__input-container {
+    display: flex;
+    position: relative;
+    flex: 1;
+}
+
+.search-banner__history-btn {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    align-items: center;
+    gap: 0.25rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: 2px solid #095797;
+    border-radius: 1.25rem;
+    background-color: white;
+    padding: 0 0.75rem;
+    min-height: 2rem;
+    color: #095797;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: "Open Sans";
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: #095797;
+        color: white;
+    }
+}
+
+.search-banner__history-btn-icon {
+    width: 22px;
+    height: 20px;
+}
+
+.search-banner__history-dialog {
+    position: absolute;
+    box-sizing: border-box;
+    position-anchor: --search-bar;
+    top: anchor(bottom);
+    left: anchor(left);
+    margin: 0;
+    border-top: none;
+    border-right: 1px solid #808a9d;
+    border-bottom: 1px solid #808a9d;
+    border-left: 1px solid #808a9d;
+    padding: 0;
+    width: anchor-size(width);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.search-banner__history-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.875rem;
+
+    &:hover {
+        background-color: #f2f1f1;
+    }
+}
+
+.search-banner__history-item-icon {
+    width: 22px;
+    height: 20px;
+}
