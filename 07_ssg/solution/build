@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+STATIC_DIR="./static"
+BASE_URL="http://127.0.0.1:8000"
+
+rm -rf "$STATIC_DIR"
+mkdir -p "$STATIC_DIR"
+
+echo "-- Building static site..."
+wget \
+  --no-verbose \
+  --execute robots=off \
+  --recursive \
+  --no-parent \
+  --level=inf \
+  --page-requisites \
+  --adjust-extension \
+  --no-host-directories \
+  --directory-prefix="$STATIC_DIR" \
+  "$BASE_URL/" 2>&1 | sed 's/^/   /'
+
+echo "-- Successfully exported site to $STATIC_DIR"
